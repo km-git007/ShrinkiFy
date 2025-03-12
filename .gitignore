@@ -1,17 +1,43 @@
-# Node.js dependencies
-Frontend/node_modules/
-Frontend/.next/
-Frontend/.env
-
-# Java dependencies
+### Backend ###
 Backend/target/
 Backend/.mvn/
 Backend/.env
-Backend/.env.prod
+Backend/.env.*
+Backend/.DS_Store
 
-# General
-.DS_Store
+### Frontend ###
+Frontend/node_modules/
+Frontend/.next/
+Frontend/.env
+Frontend/.env.*
+Frontend/.DS_Store
+
+### Logs ###
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+### Build Artifacts ###
+dist/
+dist-ssr/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IDE & OS-Specific Files ###
 .idea/
+.vscode/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-
+# Ignore all env files globally
+.env
+.env.*
 
