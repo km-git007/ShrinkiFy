@@ -28,6 +28,28 @@ To ensure **security** and **performance**, ShrinkFy is built with a robust **Sp
 ✔ **Containerized Deployment** – Dockerized architecture for easy scalability and cloud deployment.  
 ✔ **Modern UI** – Built with **React, Material UI (MUI), and Tailwind CSS** for a sleek, responsive experience. 
 
+## 📊 Key Functionalities
+
+### 1️⃣ **URL Shortening with Customization**
+- Users can generate short links with custom paths or subdomains.
+- Automatic URL validation ensures only valid links are shortened.
+- **Expiration time** settings allow links to be temporary.
+
+### 2️⃣ **Real-Time Analytics Dashboard**
+- **Click Tracking** – View the number of clicks per shortened link.
+- **Geolocation Insights** – Track where users are clicking from.
+- **Time-Based Trends** – Analyze user engagement over time.
+- **Browser & Device Statistics** – Identify the types of devices used.
+
+### 3️⃣ **Security & Authentication**
+- **JWT Authentication** secures API endpoints.
+- **Role-Based Access Control (RBAC)** restricts access to certain features.
+- **Spring Security** prevents unauthorized access and brute-force attacks.
+
+### 4️⃣ **QR Code Generation**
+- Each short link is automatically assigned a **QR code**.
+- Users can download and share QR codes for better accessibility.
+
 ## 🛠️ Tech Stack
 
 ### 🔹 **Frontend (React + Vite)**
@@ -57,30 +79,6 @@ To ensure **security** and **performance**, ShrinkFy is built with a robust **Sp
 - **Lombok** – Reduces boilerplate code for model classes.
 - **MapStruct** – Simplifies object mapping between DTOs and entities.
 - **Docker** – Containerized deployment for seamless scalability.
-
-## 📊 Key Functionalities
-
-### 1️⃣ **URL Shortening with Customization**
-- Users can generate short links with custom paths or subdomains.
-- Automatic URL validation ensures only valid links are shortened.
-- **Expiration time** settings allow links to be temporary.
-
-### 2️⃣ **Real-Time Analytics Dashboard**
-- **Click Tracking** – View the number of clicks per shortened link.
-- **Geolocation Insights** – Track where users are clicking from.
-- **Time-Based Trends** – Analyze user engagement over time.
-- **Browser & Device Statistics** – Identify the types of devices used.
-
-### 3️⃣ **Security & Authentication**
-- **JWT Authentication** secures API endpoints.
-- **Role-Based Access Control (RBAC)** restricts access to certain features.
-- **Spring Security** prevents unauthorized access and brute-force attacks.
-
-### 4️⃣ **QR Code Generation**
-- Each short link is automatically assigned a **QR code**.
-- Users can download and share QR codes for better accessibility.
-
----
 
 ## 🏗️ Installation & Setup
 
