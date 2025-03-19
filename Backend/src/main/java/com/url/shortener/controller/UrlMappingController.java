@@ -72,4 +72,13 @@ public class UrlMappingController {
         Map<LocalDate, Long> totalClicks = urlMappingService.getTotalClicksByUserAndDate(user, start, end);
         return ResponseEntity.ok(totalClicks);
     }
+
+    @DeleteMapping("/delete/{shortUrl}")
+    @PreAuthorize("hasRole('USER')")
+    public ResponseEntity<Void> deleteShortUrl(@PathVariable String shortUrl, Principal principal) {
+        User user = userService.findByUsername(principal.getName());
+        boolean deleted = urlMappingService.deleteShortUrl(shortUrl, user);
+        return deleted ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+    }
+
 }

@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -104,4 +105,16 @@ public class UrlMappingService {
 
         return urlMapping;
     }
+
+    public boolean deleteShortUrl(String shortUrl, User user) {
+        Optional<UrlMapping> urlMappingOptional = urlMappingRepository.findByShortUrlAndUser(shortUrl, user);
+
+        if (urlMappingOptional.isPresent()) {
+            urlMappingRepository.delete(urlMappingOptional.get());
+            return true; // Deletion successful
+        }
+
+        return false; // URL not found or doesn't belong to user
+    }
+
 }
