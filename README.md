@@ -6,16 +6,6 @@
 
 To ensure **security** and **performance**, ShrinkFy is built with a robust **Spring Boot** backend, utilizing **Spring Security and JWT authentication** for access control and **Redis caching** for lightning-fast response times. It is containerized using **Docker** for seamless deployment and scalability.
 
-## 📌 Table of Contents  
-
-- [Core Features](#✨-core-features)  
-- [Key Functionalities](#🔥-key-functionalities)  
-- [Tech Stack](#🛠️-tech-stack)  
-- [Installation & Setup](#🏗️-installation--setup)  
-- [Deployment](#🚀-deployment)  
-- [Contributing](#🤝-contributing)  
-- [Contact](#📩-contact)
-
   
 ## ✨ Core Features
 
@@ -80,50 +70,6 @@ To ensure **security** and **performance**, ShrinkFy is built with a robust **Sp
 - **MapStruct** – Simplifies object mapping between DTOs and entities.
 - **Docker** – Containerized deployment for seamless scalability.
 
-## 🏗️ Installation & Setup
-
-### 🔹 1️⃣ Clone the Repository
-```sh
- git clone https://github.com/your-username/shrinkfy.git
- cd shrinkfy
-```
-
-### 🔹 2️⃣ Backend Setup (Spring Boot)
-Ensure you have **Java 17+** and **Maven** installed.
-```sh
- cd backend
- mvn clean install
- mvn spring-boot:run
-```
-
-### 🔹 3️⃣ Frontend Setup (React)
-Ensure you have **Node.js (v18+)** installed.
-```sh
- cd frontend
- npm install
- npm run dev
-```
-
-### 🔹 4️⃣ Environment Variables
-Create a `.env` file in both the **backend** and **frontend** directories with necessary API keys and configurations.
-
----
-
-## 🚀 Deployment
-- **Frontend**: Deployed on **Vercel**
-- **Backend**: Deployed on **Render** using Docker
-
----
-
-## 🤝 Contributing
-We welcome contributions! If you’d like to contribute:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m "Add new feature"`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
----
 
 ## 📩 Contact
 - 🔗 [LinkedIn](https://www.linkedin.com/in/kaustavmishra)
