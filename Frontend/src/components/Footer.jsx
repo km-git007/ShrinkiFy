@@ -19,7 +19,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/kaustavmishra"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-gray-200"
+                  className="hover:text-gray-300"
                >
                   <FaLinkedin size={24} />
                </a>
